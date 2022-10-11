@@ -14,7 +14,7 @@ export function CardBox({ link, desc, tags }) {
             {
               tags.length && tags.map((tag) => {
                 return (
-                  <Button sx={{ marginRight: 1, marginBottom: 1 }} size="small" variant="outlined">{ tag }</Button>
+                  <Button key={tag} sx={{ marginRight: 1, marginBottom: 1 }} size="small" variant="outlined">{ tag }</Button>
                 )
               })
             }

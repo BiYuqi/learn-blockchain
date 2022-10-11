@@ -6,20 +6,30 @@ const FeatureListRoute = [
     link: '/ethers-universal',
     tags: [
       'ethers.js',
-      'metamask',
+      'call contract',
+      'abi',
       'swap',
       'transfer'
+    ]
+  },
+  {
+    desc: 'Metamask常用操作',
+    link: '/metamask-operate',
+    tags: [
+      'metamask',
+      'switch network',
+      'call transaction '
     ]
   }
 ]
 
 export default function Home() {
   return (
-    <div className="flex flex-row">
+    <div className="grid gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 xl:grid-cols-6">
       {
         FeatureListRoute.map((item) => {
           return (
-            <div className="basis-1/6 cursor-pointer transition hover:-translate-y-1">
+            <div key={item.link} className="cursor-pointer transition hover:-translate-y-1">
               <Dashboard { ...item } />
             </div>
           )
