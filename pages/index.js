@@ -20,6 +20,14 @@ const FeatureListRoute = [
       'switch network',
       'call transaction '
     ]
+  },
+  {
+    desc: 'wagmi',
+    link: '/wagmi',
+    tags: [
+      'wagmi',
+      'React Hooks for Ethereum'
+    ]
   }
 ]
 
