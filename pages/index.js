@@ -14,7 +14,7 @@ const FeatureListRoute = [
   },
   {
     desc: 'Metamask常用操作',
-    link: '/metamask-operate',
+    link: '/metamask',
     tags: [
       'metamask',
       'switch network',
